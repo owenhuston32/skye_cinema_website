@@ -5,7 +5,6 @@ import Home from './home.js';
 import Advertise from './advertise.js';
 import Contact from './contact.js';
 import NavBar from './navbar.js';
-import GetMovies from './movieList';
 
 function App() {
   
