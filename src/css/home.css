@@ -1,0 +1,43 @@
+.movie_icon{
+    float: left;
+    width: 200px;
+    height: 300px;
+}
+
+.movie_container {
+    border: 3px solid black; 
+    margin-bottom: 10px;
+  }
+
+.movie_time{
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+
+.movie_times_container{
+    clear: both;
+}
+
+.movie_details{
+    margin-left: 202px;
+}
+
+.movie_image_container{
+    float: left;
+    width: 200px;
+    height: 300px;
+}
+
+.movie_title{
+    font-size: x-large;
+}
+
+.movie_rating{
+    margin-top: 10px;
+    color: lightslategray;
+}
+
+.movie_description{
+    margin-top: 10px;
+    color: lightslategray;
+}

@@ -1,0 +1,100 @@
+.hamburger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 3px 3px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.horizontal_nav {
+    top: 0;
+    right: 0;
+    width: 75%;
+    position: fixed;
+
+}
+
+.vertical_nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 1s, max-height 0.6s linear;
+}
+
+.hide {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0px;
+  transition: max-height 0.3s, opacity 0.3s, visibility 0.3s linear;
+}
+
+
+.horizontal_nav button, .hide .hor_nav_item {
+    width: 33.333%;
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 12px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    white-space: nowrap;
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .horizontal_nav:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .horizontal_nav button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  .vertical_nav button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+  .vertical_nav .vert_nav_item, .hide .vert_nav_item {
+    width: 100%;
+    background-color: #04AA6D; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    display: block; /* Make the buttons appear below each other */
+  }
+
+  /* Add a background color on hover */
+  .hor_nav_item:hover, .vert_nav_item:hover  {
+    background-color: #3e8e41;
+  }
+
+  .background{
+    position: fixed;
+    top: 0;
+    padding: 21px 100%;
+    background-color: #04AA6D; /* Green background */
+  }
+
+  .title{
+    position: fixed;
+    top: 0;
+    margin-top: 3px;
+    margin-left: 5px;
+    color: white;
+    font-size: 30px;
+  }
