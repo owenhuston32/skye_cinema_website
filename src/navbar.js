@@ -40,7 +40,6 @@ function useHamburgerToggle()
     const [toggle, setToggle] = useState(false);
     useEffect(() => {
         const handleToggle = () => {
-            console.log(toggle);
             setToggle(!toggle);
 
         }
@@ -61,7 +60,7 @@ function useHamburgerToggle()
                 button_array[i].removeEventListener('click', handleToggle);
             }
         }
-    }, [toggle, setToggle]);
+    }, [toggle]);
 
     return toggle;
 }
